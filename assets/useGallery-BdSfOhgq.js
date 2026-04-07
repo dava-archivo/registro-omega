@@ -1,1 +1,0 @@
-import{r}from"./index-CvjSiQxD.js";function s(l){const e=r(!1),n=r(0);function a(t=0){n.value=Math.min(t,l.length-1),e.value=!0}function o(){e.value=!1}return{showImageViewer:e,viewerIndex:n,openGallery:a,closeGallery:o,images:l}}export{s as u};
