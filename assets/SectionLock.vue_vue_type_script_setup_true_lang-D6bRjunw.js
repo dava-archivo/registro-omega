@@ -1,0 +1,30 @@
+import{d as Y,M as Z,c as C,S as P,N as X,r,o as J,a as W,G as ee,O as se,j as a,e as s,k as c,g as h,t as E,u as k,F as _,q as F,f as ne,w as oe,h as te,C as ae,K as le,x as re,i as T,n as ie,l as ue,m as l}from"./index-weHPzGtL.js";const ce={key:1,class:"sl-overlay"},Ee={class:"sl-terminal"},ve={class:"sl-header"},de={class:"sl-lines"},Oe={key:0,class:"sl-cursor"},pe={key:0,class:"sl-lines sl-lines--collapse"},Ce={class:"sl-prereq-hint"},Ie={key:2,class:"sl-form"},Ae={class:"sl-hint"},me={class:"sl-input-row"},Re={key:0,class:"sl-feedback sl-feedback--error"},fe={key:1,class:"sl-feedback sl-feedback--success"},Se={key:2,class:"sl-extra-hint"},Ne=Y({__name:"SectionLock",props:{section:{}},setup(H){const u=H,m=ue(),v=Z(),b=C(()=>v.isUnlocked(u.section)),B=C(()=>v.isPrerequisiteMet(u.section)),R=P[u.section],I=C(()=>v.prerequisiteFor(u.section)),y=C(()=>I.value?P[I.value]:""),G=C(()=>I.value?X[I.value]:"/"),U={documentos:{hint:`Pregunta al guardián su nombre.
+El nombre es la llave.`,extraHint:`Cuatro letras.
+Pronunciadas en silencio
+por todos los que vigilan.`},video:{hint:`El fenómeno no esperó al amanecer.
+Llegó cuando el silencio aún era dueño.
+El informe lo vio nacer.
+La hora está escrita — sin los dos puntos
+que separan lo que nunca debió unirse.`,extraHint:`Antes del alba.
+Cuatro cifras que el archivo no olvidó.`},alejandria:{hint:`Mil voces.
+Un solo pensamiento.`,extraHint:`Las aves lo saben sin aprenderlo.
+Los peces, sin ojos que se busquen.
+Lo que los une
+es también lo que cierra esta puerta.`},mapeados:{hint:`El reloj no olvidó
+lo que los ojos cerraron.
+Busca el primer momento.`,extraHint:`Cuatro cifras.
+La noche lo registró exacto.
+El mapa empezó a sangrar en ese instante.`},investigacion:{hint:`No todo lo que existe
+tiene voz.
+El que no la tiene
+también tiene un nombre.`,extraHint:`Una sola palabra.
+Lo urbano lo conoce bien.
+Pronuncia lo que no suena.`},encriptados:{hint:`El año en que comenzó
+es también el que cierra.
+El origen es el destino.`,extraHint:`Cuatro cifras.
+Las del archivo más antiguo.
+Donde todo empezó, todo termina.`},base03:{hint:`El código es la clave.
+La clave es el código.`,extraHint:`Siete caracteres.
+Una combinación de letras y números.
+Es el último en la secuencia,
+pero su origen está en el primero.`}},K=U[u.section].hint,$=U[u.section].extraHint,d=r("VERIFYING"),x=r([]),V=r(!1),g=r(!1),q=[];function n(i,e){q.push(setTimeout(i,e))}function o(i,e=""){x.value.push({text:i,type:e})}J(()=>{b.value||(n(()=>o(`> ACCEDIENDO A MÓDULO: ${R}...`),0),n(()=>o("> VERIFICANDO PROTOCOLO SECUENCIAL..."),500),n(()=>o("> [OK] — IDENTIDAD CONFIRMADA","ok"),1100),n(()=>o("> COMPROBANDO ESTADO DE AUTORIZACIÓN..."),1700),n(()=>o("> ..."),2300),n(()=>j(),2800))});function j(){B.value?(d.value="LOCKED_READY",n(()=>o(`> ACCESO AL MÓDULO ${R}: RESTRINGIDO`,"error"),0),n(()=>o("> CÓDIGO DE VERIFICACIÓN REQUERIDO","warn"),500),n(()=>{g.value=!0,ie(()=>S.value?.focus())},1200)):(d.value="LOCKED_NO_PREREQ",n(()=>o("> PROTOCOLO ANTERIOR INCOMPLETO","error"),0),n(()=>o("> ESTA SECCIÓN REQUIERE AUTORIZACIÓN PREVIA","error"),500),n(()=>o(`> ACCEDA AL MÓDULO ${y.value} PRIMERO`,"warn"),1e3),n(()=>o("> ——————————————————————————"),1500),n(()=>o("> NIVEL DE ACCESO INSUFICIENTE","error"),1900),n(()=>{V.value=!0},2500))}W(()=>{q.forEach(clearTimeout)});function z(){window.history.length>1?m.back():m.push({name:"home"})}const w=r(!1),f=r([]),Q=[[0,"> [ALERTA DE SEGURIDAD]","error"],[500,"> DEMASIADOS INTENTOS DE ACCESO NO AUTORIZADOS","error"],[1100,"> PROTOCOLO DE LIMPIEZA ACTIVADO","warn"],[1700,"> BORRANDO SESIÓN...","warn"],[2100,"> ████████████████████████████","error"],[2600,"> REINICIANDO SISTEMA...","error"]];ee(()=>v.isSecurityReset,i=>{i&&(w.value=!0,f.value=[],Q.forEach(([e,N,t=""])=>{n(()=>f.value.push({text:N,type:t}),e)}))},{immediate:!0});const S=r(null),O=r(""),p=r(!1),A=r(!1),D=r(0);async function M(){if(!O.value.trim())return;await v.tryUnlock(u.section,O.value)?(A.value=!0,p.value=!1):(D.value++,p.value=!0,A.value=!1,O.value="",v.registerFail(m),S.value?.focus())}return(i,e)=>{const N=te("router-link");return b.value?se(i.$slots,"default",{key:0}):(l(),a("div",ce,[e[6]||(e[6]=s("div",{class:"dava-scanlines"},null,-1)),s("div",Ee,[s("div",ve,[e[2]||(e[2]=s("span",{class:"sl-sigil"},"◈",-1)),h(" SISTEMA DAVA  ·  "+E(k(R))+" ",1),e[3]||(e[3]=s("span",{class:"sl-sigil"},"◈",-1))]),s("div",de,[(l(!0),a(_,null,F(x.value,(t,L)=>(l(),a("div",{key:L,class:T(["sl-line",t.type?`sl-line--${t.type}`:""])},E(t.text),3))),128)),d.value==="VERIFYING"?(l(),a("span",Oe,"_")):c("",!0)]),w.value?(l(),a("div",pe,[(l(!0),a(_,null,F(f.value,(t,L)=>(l(),a("div",{key:L,class:T(["sl-line",t.type?`sl-line--${t.type}`:""])},E(t.text),3))),128))])):c("",!0),d.value==="LOCKED_NO_PREREQ"&&V.value?(l(),a(_,{key:1},[s("div",Ce,[e[4]||(e[4]=h(" para continuar: ",-1)),ne(N,{to:G.value,class:"sl-prereq-link"},{default:oe(()=>[h(" acceder al módulo "+E(y.value),1)]),_:1},8,["to"])]),s("div",{class:"sl-back"},[s("button",{class:"sl-back-btn",onClick:z},"← VOLVER AL SISTEMA")])],64)):c("",!0),d.value==="LOCKED_READY"&&g.value?(l(),a("div",Ie,[s("div",Ae,E(k(K)),1),e[5]||(e[5]=s("div",{class:"sl-hint-author"},"— R.C.V. / ARCHIVO ε",-1)),s("div",me,[ae(s("input",{ref_key:"inputRef",ref:S,"onUpdate:modelValue":e[0]||(e[0]=t=>O.value=t),class:T(["sl-input",{"is-error":p.value,"is-success":A.value}]),type:"text",maxlength:"20",autocomplete:"off",spellcheck:"false",onKeydown:re(M,["enter"]),onInput:e[1]||(e[1]=t=>p.value=!1),placeholder:"_ _ _ _ _ _ _ _"},null,34),[[le,O.value]]),s("button",{class:"sl-submit",onClick:M},"VERIFICAR")]),p.value?(l(),a("div",Re," ▸ CÓDIGO INCORRECTO — "+E(D.value)+" INTENTO(S) FALLIDO(S) ",1)):c("",!0),A.value?(l(),a("div",fe," ▸ VERIFICACIÓN EXITOSA — ACCESO CONCEDIDO ")):c("",!0),D.value>=3?(l(),a("div",Se," SUGERENCIA: "+E(k($)),1)):c("",!0)])):c("",!0)]),e[7]||(e[7]=s("div",{class:"sl-footer"},[s("span",null,"DAVA · ACCESO RESTRINGIDO"),s("span",null,"NIVEL Ω"),s("span",null,"PROTOCOLO SECUENCIAL")],-1))]))}}});export{Ne as _};
